@@ -18,7 +18,7 @@ export class AppComponent {
     navigator['share']({
      title: 'Class Reunion',
      text: 'Angular rocks not!',
-     url: 'https://developers.google.com/web', 
+     url: 'https://myworkshop3.dawnlum.now.sh/', 
     })
     .then(() => console.log('Successful share'))
     .catch((error) => console.log('Error sharing',error));
