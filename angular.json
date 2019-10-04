@@ -22,7 +22,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.json", "src/images"
+              "src/manifest.json",
+              "src/images"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -89,7 +90,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.json", "src/images"
+              "src/manifest.json",
+              "src/images"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -125,7 +127,7 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {"baseHref":"/workshop3/"}
         }
       }
     }
