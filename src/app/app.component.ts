@@ -1,4 +1,4 @@
-import { Component ,} from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 import { RSVP } from './models';
 
 
@@ -7,11 +7,16 @@ import { RSVP } from './models';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'myworkshop3';
 
-  addToList($event) {
+  shareable = false;
+  addToList($event: RSVP) {
     console.info("RSVP list:" , $event);
+  }
+
+  ngOnInit(){
+    this.shareable = !! navigator['share'];
   }
 
   shareTheJoy() {
